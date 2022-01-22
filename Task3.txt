@@ -1,0 +1,84 @@
+Day-3(TASK):
+
+QUESTION:
+2.Create your own resume data in JSON format.
+ANSWER:
+let obj=[
+    Name:"Vaishnavi",
+    E-mail : "vaishoo@gmail.com",
+    Phone:"8854321",
+    DOB:"June-5,1995",
+
+    Address:{
+        Street:"55,First street",
+        City:"Chennai",
+        State:"Tamilnadu"
+    },
+
+    Education:{
+        Institution:"Sathyabama University",
+        Department:"EEE",
+        Year:"2012-2016",
+        CGPA:"7.8"
+    },
+
+    Work:{
+        Company:"Dell",
+        Position:"Full Stack Developer",
+        Salary:"100,000 USD"
+    },
+    Skills:"HTML,CSS,Javascript,Bootstrap",
+    Language:"English,Hindi,Tamil,Telugu" 
+];
+
+
+
+QUESTION:
+For the given JSON iterate over all for loops (for, for in, for of, forEach).
+
+var obj=[
+    {person:"Name1",
+     age:"20",
+     company:"Guvi" 
+    },
+
+    {person:"Name2",
+     age:"30",
+     company:"Guvi geek" 
+    },
+
+    {person:"Name3",
+     age:"40",
+     company:"Guvigeek Network"
+    }
+];
+
+ANSWER:
+
+1.FOR-LOOP:
+for(var i=0;i<obj.length;i++){
+    console.log(`${obj[i].person}
+                 ${obj[i].age}
+                 ${obj[i].company}`
+    );
+}
+
+2.FOR-EACH LOOP:
+obj.forEach((data) => {
+    console.log(`${data.person}
+                 ${data.age}
+                 ${data.company}`)
+});
+
+
+3.FOR-IN LOOP:
+for(var key in obj){
+    console.log(key);
+}
+
+4.FOR-OF LOOP:
+for(var i of obj){
+    console.log(`${i.person}
+                 ${i.age}
+                 ${i.company}`)
+}
